@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "testpipeline4510d622-92ec-4cec-baf4-890288e5eda8",
+  "title" : "IR Demo Producer LZ -> FZ",
+  "description" : "",
+  "created" : 1509326243731,
+  "lastModified" : 1510628651338,
+  "creator" : "admin",
+  "lastModifier" : "admin",
+  "lastRev" : "0",
+  "uuid" : "66212be2-11fa-4d0a-95b0-4d8981aff9d2",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ "PROD" ]
+  },
+  "name" : "testpipeline4510d622-92ec-4cec-baf4-890288e5eda8",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

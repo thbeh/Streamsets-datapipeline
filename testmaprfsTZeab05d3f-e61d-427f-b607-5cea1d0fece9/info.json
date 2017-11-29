@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "testmaprfsTZeab05d3f-e61d-427f-b607-5cea1d0fece9",
+  "title" : "test-maprfs-TZ",
+  "description" : "",
+  "created" : 1506553922850,
+  "lastModified" : 1506566442994,
+  "creator" : "mapr",
+  "lastModifier" : "mapr",
+  "lastRev" : "0",
+  "uuid" : "d4035ac5-f6be-4169-804d-095f22966db1",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "testmaprfsTZeab05d3f-e61d-427f-b607-5cea1d0fece9",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

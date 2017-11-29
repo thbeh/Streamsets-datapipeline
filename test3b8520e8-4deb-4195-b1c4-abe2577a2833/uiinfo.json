@@ -1,0 +1,28 @@
+{
+  "SFTPFTPClient_01" : {
+    "description" : "",
+    "label" : "SFTP client",
+    "xPos" : 60,
+    "yPos" : 50,
+    "stageType" : "SOURCE"
+  },
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : false,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "LocalFS_01" : {
+    "description" : "",
+    "label" : "Local FS 1",
+    "xPos" : 392,
+    "yPos" : 154,
+    "stageType" : "TARGET"
+  }
+}

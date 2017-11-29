@@ -1,0 +1,28 @@
+{
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : true,
+      "executeLifecycleEvents" : false,
+      "showHeader" : true,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "MapRStreamsConsumer_01" : {
+    "description" : "",
+    "label" : "MapR Streams Consumer 1",
+    "xPos" : 264,
+    "yPos" : 112,
+    "stageType" : "SOURCE"
+  },
+  "MapRDBJSON_01" : {
+    "description" : "",
+    "label" : "MapR DB JSON 1",
+    "xPos" : 559,
+    "yPos" : 110,
+    "stageType" : "TARGET"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Directory_01" : {
+    "yPos" : 100,
+    "stageType" : "SOURCE",
+    "rawSource" : {
+      "configuration" : [ {
+        "name" : "fileName"
+      } ]
+    },
+    "description" : "",
+    "label" : "Directory 1",
+    "xPos" : 153
+  },
+  "ExpressionEvaluator_01" : {
+    "description" : "",
+    "label" : "Expression Evaluator 1",
+    "xPos" : 766.952880859375,
+    "yPos" : 98.95285034179688,
+    "stageType" : "PROCESSOR"
+  },
+  "MapRStreamsProducer_01" : {
+    "description" : "",
+    "label" : "MapR Streams Producer 1",
+    "xPos" : 1074,
+    "yPos" : 98,
+    "stageType" : "TARGET"
+  },
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : true,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "FieldRenamer_01" : {
+    "description" : "",
+    "label" : "Field Renamer 1",
+    "xPos" : 482,
+    "yPos" : 102,
+    "stageType" : "PROCESSOR"
+  }
+}

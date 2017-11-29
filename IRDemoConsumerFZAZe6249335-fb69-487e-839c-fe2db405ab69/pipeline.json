@@ -1,0 +1,456 @@
+{
+  "schemaVersion" : 4,
+  "version" : 7,
+  "pipelineId" : "IRDemoConsumerFZAZe6249335-fb69-487e-839c-fe2db405ab69",
+  "title" : "IR Demo Consumer FZ -> AZ",
+  "description" : "",
+  "uuid" : "712e4499-dd23-4682-bb38-d157e2fb0ab0",
+  "configuration" : [ {
+    "name" : "executionMode",
+    "value" : "STANDALONE"
+  }, {
+    "name" : "deliveryGuarantee",
+    "value" : "AT_LEAST_ONCE"
+  }, {
+    "name" : "startEventStage",
+    "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+  }, {
+    "name" : "stopEventStage",
+    "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+  }, {
+    "name" : "shouldRetry",
+    "value" : true
+  }, {
+    "name" : "retryAttempts",
+    "value" : -1
+  }, {
+    "name" : "memoryLimit",
+    "value" : "${jvm:maxMemoryMB() * 0.65}"
+  }, {
+    "name" : "memoryLimitExceeded",
+    "value" : "STOP_PIPELINE"
+  }, {
+    "name" : "notifyOnStates",
+    "value" : [ "RUN_ERROR", "STOPPED", "FINISHED" ]
+  }, {
+    "name" : "emailIDs",
+    "value" : [ ]
+  }, {
+    "name" : "constants",
+    "value" : [ ]
+  }, {
+    "name" : "badRecordsHandling",
+    "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+  }, {
+    "name" : "errorRecordPolicy",
+    "value" : "ORIGINAL_RECORD"
+  }, {
+    "name" : "workerCount",
+    "value" : 0
+  }, {
+    "name" : "clusterSlaveMemory",
+    "value" : 1024
+  }, {
+    "name" : "clusterSlaveJavaOpts",
+    "value" : "-XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Dlog4j.debug"
+  }, {
+    "name" : "clusterLauncherEnv",
+    "value" : [ ]
+  }, {
+    "name" : "mesosDispatcherURL",
+    "value" : null
+  }, {
+    "name" : "hdfsS3ConfDir",
+    "value" : null
+  }, {
+    "name" : "rateLimit",
+    "value" : 0
+  }, {
+    "name" : "maxRunners",
+    "value" : 0
+  }, {
+    "name" : "webhookConfigs",
+    "value" : [ ]
+  }, {
+    "name" : "sparkConfigs",
+    "value" : [ ]
+  }, {
+    "name" : "statsAggregatorStage",
+    "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_StatsDpmDirectlyDTarget::1"
+  } ],
+  "uiInfo" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : true,
+      "executeLifecycleEvents" : false,
+      "showHeader" : true,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "stages" : [ {
+    "instanceName" : "MapRStreamsConsumer_01",
+    "library" : "streamsets-datacollector-mapr_5_2-lib",
+    "stageName" : "com_streamsets_pipeline_stage_origin_maprstreams_MapRStreamsDSource",
+    "stageVersion" : "5",
+    "configuration" : [ {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.filePatternInArchive",
+      "value" : "*"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.charset",
+      "value" : "UTF-8"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.removeCtrlChars",
+      "value" : true
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.textMaxLineLen",
+      "value" : 1024
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.useCustomDelimiter",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.customDelimiter",
+      "value" : "\\r\\n"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.includeCustomDelimiterInTheText",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.jsonContent",
+      "value" : "MULTIPLE_OBJECTS"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.jsonMaxObjectLen",
+      "value" : 4096
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvFileFormat",
+      "value" : "CSV"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvHeader",
+      "value" : "NO_HEADER"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvMaxObjectLen",
+      "value" : 1024
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvAllowExtraColumns",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvExtraColumnPrefix",
+      "value" : "_extra_"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvCustomDelimiter",
+      "value" : "|"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvCustomEscape",
+      "value" : "\\"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvCustomQuote",
+      "value" : "\""
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvEnableComments",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvCommentMarker",
+      "value" : "#"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvIgnoreEmptyLines",
+      "value" : true
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvRecordType",
+      "value" : "LIST_MAP"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.csvSkipStartLines",
+      "value" : 0
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.parseNull",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.nullConstant",
+      "value" : "\\\\N"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.xmlRecordElement",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.includeFieldXpathAttributes",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.xPathNamespaceContext",
+      "value" : [ ]
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.outputFieldAttributes",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.xmlMaxObjectLen",
+      "value" : 4096
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.logMode",
+      "value" : "COMMON_LOG_FORMAT"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.logMaxObjectLen",
+      "value" : 1024
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.retainOriginalLine",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.customLogFormat",
+      "value" : "%h %l %u %t \"%r\" %>s %b"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.regex",
+      "value" : "^(\\S+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(\\S+) (\\S+) (\\S+)\" (\\d{3}) (\\d+)"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.fieldPathsToGroupName",
+      "value" : [ {
+        "fieldPath" : "/",
+        "group" : 1
+      } ]
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.grokPatternDefinition",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.grokPattern",
+      "value" : "%{COMMONAPACHELOG}"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.onParseError",
+      "value" : "ERROR"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.maxStackTraceLines",
+      "value" : 50
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.enableLog4jCustomLogFormat",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.log4jCustomLogFormat",
+      "value" : "%r [%t] %-5p %c %x - %m%n"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.avroSchemaSource",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.avroSchema",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.schemaRegistryUrls",
+      "value" : [ ]
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.schemaLookupMode",
+      "value" : "SUBJECT"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.subject",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.schemaId",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.protoDescriptorFile",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.messageType",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.isDelimited",
+      "value" : true
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.binaryMaxObjectLen",
+      "value" : 1024
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.datagramMode",
+      "value" : "SYSLOG"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.typesDbPath",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.convertTime",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.excludeInterval",
+      "value" : true
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.authFilePath",
+      "value" : null
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.wholeFileMaxObjectLen",
+      "value" : 8192
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.rateLimit",
+      "value" : "-1"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormatConfig.verifyChecksum",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.dataFormat",
+      "value" : "JSON"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.consumerGroup",
+      "value" : "streamsetsDataCollector333356"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.topic",
+      "value" : "/mapr/maprlab/poc/FZ/IR/landonline-statute/landonline-statute_stream:landonline-statute"
+    }, {
+      "name" : "maprstreamsSourceConfigBean.produceSingleRecordPerMessage",
+      "value" : false
+    }, {
+      "name" : "maprstreamsSourceConfigBean.maxBatchSize",
+      "value" : 1000
+    }, {
+      "name" : "maprstreamsSourceConfigBean.maxWaitTime",
+      "value" : 2000
+    }, {
+      "name" : "maprstreamsSourceConfigBean.maxRatePerPartition",
+      "value" : 1000
+    }, {
+      "name" : "maprstreamsSourceConfigBean.kafkaConsumerConfigs",
+      "value" : [ {
+        "key" : "auto.offset.reset",
+        "value" : "earliest"
+      } ]
+    }, {
+      "name" : "stageOnRecordError",
+      "value" : "TO_ERROR"
+    } ],
+    "uiInfo" : {
+      "description" : "",
+      "label" : "MapR Streams Consumer 1",
+      "xPos" : 264,
+      "yPos" : 112,
+      "stageType" : "SOURCE"
+    },
+    "inputLanes" : [ ],
+    "outputLanes" : [ "MapRStreamsConsumer_01OutputLane15095246068050" ],
+    "eventLanes" : [ ]
+  }, {
+    "instanceName" : "MapRDBJSON_01",
+    "library" : "streamsets-datacollector-mapr_5_2-lib",
+    "stageName" : "com_streamsets_pipeline_stage_destination_mapr_MapRJsonDTarget",
+    "stageVersion" : "1",
+    "configuration" : [ {
+      "name" : "mapRJsonConfigBean.tableName",
+      "value" : "/mapr/maprlab/poc/AZ/IR/landonline-statute/landonline-statute_table"
+    }, {
+      "name" : "mapRJsonConfigBean.createTable",
+      "value" : true
+    }, {
+      "name" : "mapRJsonConfigBean.keyField",
+      "value" : "/id"
+    }, {
+      "name" : "mapRJsonConfigBean.isBinaryRowKey",
+      "value" : false
+    }, {
+      "name" : "mapRJsonConfigBean.insertOrReplace",
+      "value" : "REPLACE"
+    }, {
+      "name" : "stageOnRecordError",
+      "value" : "TO_ERROR"
+    }, {
+      "name" : "stageRequiredFields",
+      "value" : [ ]
+    }, {
+      "name" : "stageRecordPreconditions",
+      "value" : [ ]
+    } ],
+    "uiInfo" : {
+      "description" : "",
+      "label" : "MapR DB JSON 1",
+      "xPos" : 558,
+      "yPos" : 109,
+      "stageType" : "TARGET"
+    },
+    "inputLanes" : [ "MapRStreamsConsumer_01OutputLane15095246068050" ],
+    "outputLanes" : [ ],
+    "eventLanes" : [ ]
+  } ],
+  "errorStage" : {
+    "instanceName" : "Discard_ErrorStage",
+    "library" : "streamsets-datacollector-basic-lib",
+    "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+    "stageVersion" : "1",
+    "configuration" : [ ],
+    "uiInfo" : {
+      "description" : "",
+      "label" : "Error Records - Discard",
+      "xPos" : 704,
+      "yPos" : 50,
+      "stageType" : "TARGET"
+    },
+    "inputLanes" : [ ],
+    "outputLanes" : [ ],
+    "eventLanes" : [ ]
+  },
+  "info" : {
+    "pipelineId" : "IRDemoConsumerFZAZe6249335-fb69-487e-839c-fe2db405ab69",
+    "title" : "IR Demo Consumer FZ -> AZ",
+    "description" : "",
+    "created" : 1509524587240,
+    "lastModified" : 1509530400968,
+    "creator" : "admin",
+    "lastModifier" : "admin",
+    "lastRev" : "0",
+    "uuid" : "014ebd52-302e-457c-94cf-f6e816252452",
+    "valid" : true,
+    "metadata" : {
+      "labels" : [ ]
+    },
+    "name" : "IRDemoConsumerFZAZe6249335-fb69-487e-839c-fe2db405ab69",
+    "sdcVersion" : "2.7.1.1",
+    "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+  },
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "statsAggregatorStage" : {
+    "instanceName" : "WritetoDPMdirectly_StatsAggregatorStage",
+    "library" : "streamsets-datacollector-basic-lib",
+    "stageName" : "com_streamsets_pipeline_stage_destination_devnull_StatsDpmDirectlyDTarget",
+    "stageVersion" : "1",
+    "configuration" : [ ],
+    "uiInfo" : {
+      "description" : "",
+      "label" : "Stats Aggregator - Write to DPM directly",
+      "xPos" : 280,
+      "yPos" : 50,
+      "stageType" : "TARGET"
+    },
+    "inputLanes" : [ ],
+    "outputLanes" : [ ],
+    "eventLanes" : [ ]
+  },
+  "startEventStages" : [ {
+    "instanceName" : "Discard_StartEventStage",
+    "library" : "streamsets-datacollector-basic-lib",
+    "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+    "stageVersion" : "1",
+    "configuration" : [ ],
+    "uiInfo" : {
+      "description" : "",
+      "label" : "Start Event - Discard",
+      "xPos" : 280,
+      "yPos" : 50,
+      "stageType" : "TARGET"
+    },
+    "inputLanes" : [ ],
+    "outputLanes" : [ ],
+    "eventLanes" : [ ]
+  } ],
+  "stopEventStages" : [ {
+    "instanceName" : "Discard_StopEventStage",
+    "library" : "streamsets-datacollector-basic-lib",
+    "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+    "stageVersion" : "1",
+    "configuration" : [ ],
+    "uiInfo" : {
+      "description" : "",
+      "label" : "Stop Event - Discard",
+      "xPos" : 280,
+      "yPos" : 50,
+      "stageType" : "TARGET"
+    },
+    "inputLanes" : [ ],
+    "outputLanes" : [ ],
+    "eventLanes" : [ ]
+  } ],
+  "valid" : true,
+  "issues" : {
+    "stageIssues" : { },
+    "issueCount" : 0,
+    "pipelineIssues" : [ ]
+  },
+  "previewable" : true
+}

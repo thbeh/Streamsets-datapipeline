@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "metadataRETURNLODGEMENTS1d0c7264-74e1-4c50-802d-c9e1d14a01a2",
+  "title" : "metadata_RETURN_LODGEMENTS",
+  "description" : "",
+  "created" : 1510692547357,
+  "lastModified" : 1511159019065,
+  "creator" : "mapr",
+  "lastModifier" : "mapr",
+  "lastRev" : "0",
+  "uuid" : "e8d687ca-cfe2-443c-838a-fd70496ffc1c",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "metadataRETURNLODGEMENTS1d0c7264-74e1-4c50-802d-c9e1d14a01a2",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

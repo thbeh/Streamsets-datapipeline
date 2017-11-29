@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "DemoPipeline13fc27f0-5114-45a5-a9f1-11565e245b41",
+  "title" : "DemoPipeline",
+  "description" : "",
+  "created" : 1509412876526,
+  "lastModified" : 1509516309770,
+  "creator" : "admin",
+  "lastModifier" : "admin",
+  "lastRev" : "0",
+  "uuid" : "b1fbec77-7c9e-4bfe-a076-48a18137081e",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "DemoPipeline13fc27f0-5114-45a5-a9f1-11565e245b41",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

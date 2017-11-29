@@ -1,0 +1,28 @@
+{
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : false,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "Trash_01" : {
+    "description" : "",
+    "label" : "Trash 1",
+    "xPos" : 502,
+    "yPos" : 75,
+    "stageType" : "TARGET"
+  },
+  "MapRFS_01" : {
+    "description" : "",
+    "label" : "MapR FS 1",
+    "xPos" : 136,
+    "yPos" : 72,
+    "stageType" : "SOURCE"
+  }
+}

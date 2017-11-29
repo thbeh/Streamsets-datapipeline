@@ -1,0 +1,28 @@
+{
+  "SFTPFTPClient_01" : {
+    "description" : "",
+    "label" : "SFTP FTP Client 1",
+    "xPos" : 255,
+    "yPos" : 109,
+    "stageType" : "SOURCE"
+  },
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : false,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "MapRFS_01" : {
+    "description" : "",
+    "label" : "MapR FS",
+    "xPos" : 649,
+    "yPos" : 104,
+    "stageType" : "TARGET"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "test3b8520e8-4deb-4195-b1c4-abe2577a2833",
+  "title" : "test",
+  "description" : "",
+  "created" : 1505875923601,
+  "lastModified" : 1505880555734,
+  "creator" : "admin",
+  "lastModifier" : "admin",
+  "lastRev" : "0",
+  "uuid" : "ed394550-ef83-465d-8f60-d10472e3bfa3",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "test3b8520e8-4deb-4195-b1c4-abe2577a2833",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

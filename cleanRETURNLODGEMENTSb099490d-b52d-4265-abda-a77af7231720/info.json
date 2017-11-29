@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "cleanRETURNLODGEMENTSb099490d-b52d-4265-abda-a77af7231720",
+  "title" : "clean_RETURN_LODGEMENTS",
+  "description" : "",
+  "created" : 1510608259531,
+  "lastModified" : 1510691094847,
+  "creator" : "admin",
+  "lastModifier" : "mapr",
+  "lastRev" : "0",
+  "uuid" : "8e9390a8-24d4-407e-a8cf-56605d816ebd",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "cleanRETURNLODGEMENTSb099490d-b52d-4265-abda-a77af7231720",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

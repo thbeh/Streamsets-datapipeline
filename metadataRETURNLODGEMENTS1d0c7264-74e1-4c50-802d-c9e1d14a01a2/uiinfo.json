@@ -1,0 +1,61 @@
+{
+  "MapRDBJSON_02" : {
+    "description" : "",
+    "label" : "MapR DB JSON 2",
+    "xPos" : 1124.31787109375,
+    "yPos" : 175,
+    "stageType" : "TARGET"
+  },
+  "MapRDBJSON_01" : {
+    "description" : "",
+    "label" : "MapR DB JSON 1",
+    "xPos" : 994.31787109375,
+    "yPos" : 50.174957275390625,
+    "stageType" : "TARGET"
+  },
+  "Directory_01" : {
+    "yPos" : 83,
+    "stageType" : "SOURCE",
+    "rawSource" : {
+      "configuration" : [ {
+        "name" : "fileName"
+      } ]
+    },
+    "description" : "",
+    "label" : "LZ Collections",
+    "xPos" : 129
+  },
+  "SchemaGenerator_01" : {
+    "description" : "",
+    "label" : "Schema Generator 1",
+    "xPos" : 589.5543212890625,
+    "yPos" : 124.07611083984375,
+    "stageType" : "PROCESSOR"
+  },
+  "ExpressionEvaluator_02" : {
+    "description" : "",
+    "label" : "Expression Evaluator 2",
+    "xPos" : 827,
+    "yPos" : 216,
+    "stageType" : "PROCESSOR"
+  },
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : true,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "FieldRenamer_01" : {
+    "description" : "",
+    "label" : "Field Mapping",
+    "xPos" : 351.9043273925781,
+    "yPos" : 26.018524169921875,
+    "stageType" : "PROCESSOR"
+  }
+}

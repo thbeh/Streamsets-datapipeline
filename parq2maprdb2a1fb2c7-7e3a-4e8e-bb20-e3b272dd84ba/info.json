@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "parq2maprdb2a1fb2c7-7e3a-4e8e-bb20-e3b272dd84ba",
+  "title" : "parq2maprdb",
+  "description" : "",
+  "created" : 1510865975967,
+  "lastModified" : 1510980044871,
+  "creator" : "mapr",
+  "lastModifier" : "mapr",
+  "lastRev" : "0",
+  "uuid" : "cf22c26c-f575-40a9-8f3c-d3ff67a0d34e",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "parq2maprdb2a1fb2c7-7e3a-4e8e-bb20-e3b272dd84ba",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

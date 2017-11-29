@@ -1,0 +1,35 @@
+{
+  "ExpressionEvaluator_01" : {
+    "description" : "",
+    "label" : "Expression Evaluator 1",
+    "xPos" : 324.5285339355469,
+    "yPos" : 142.10018157958984,
+    "stageType" : "PROCESSOR"
+  },
+  "SFTPFTPClient_01" : {
+    "description" : "",
+    "label" : "SFTP FTP Client 1",
+    "xPos" : 83.0362548828125,
+    "yPos" : 65,
+    "stageType" : "SOURCE"
+  },
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : true,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "MapRFS_02" : {
+    "description" : "",
+    "label" : "MapR FS 2",
+    "xPos" : 778.0362548828125,
+    "yPos" : 49,
+    "stageType" : "TARGET"
+  }
+}

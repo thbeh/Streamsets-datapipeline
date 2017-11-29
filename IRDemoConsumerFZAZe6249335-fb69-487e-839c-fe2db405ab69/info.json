@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "IRDemoConsumerFZAZe6249335-fb69-487e-839c-fe2db405ab69",
+  "title" : "IR Demo Consumer FZ -> AZ",
+  "description" : "",
+  "created" : 1509524587240,
+  "lastModified" : 1509531827706,
+  "creator" : "admin",
+  "lastModifier" : "admin",
+  "lastRev" : "0",
+  "uuid" : "712e4499-dd23-4682-bb38-d157e2fb0ab0",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "IRDemoConsumerFZAZe6249335-fb69-487e-839c-fe2db405ab69",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}

@@ -1,0 +1,33 @@
+{
+  "MapRDBJSON_01" : {
+    "description" : "",
+    "label" : "MapR DB JSON 1",
+    "xPos" : 712,
+    "yPos" : 52,
+    "stageType" : "TARGET"
+  },
+  "Directory_01" : {
+    "yPos" : 90,
+    "stageType" : "SOURCE",
+    "rawSource" : {
+      "configuration" : [ {
+        "name" : "fileName"
+      } ]
+    },
+    "description" : "",
+    "label" : "Directory 1",
+    "xPos" : 295
+  },
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : false,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  }
+}

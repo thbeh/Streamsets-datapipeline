@@ -1,0 +1,47 @@
+{
+  "MapRDBJSON_01" : {
+    "description" : "",
+    "label" : "MapR DB JSON 1",
+    "xPos" : 1019.22216796875,
+    "yPos" : 144.22222900390625,
+    "stageType" : "TARGET"
+  },
+  "Directory_01" : {
+    "yPos" : 83,
+    "stageType" : "SOURCE",
+    "rawSource" : {
+      "configuration" : [ {
+        "name" : "fileName"
+      } ]
+    },
+    "description" : "",
+    "label" : "LZ Collections",
+    "xPos" : 129
+  },
+  ":pipeline:" : {
+    "previewConfig" : {
+      "previewSource" : "CONFIGURED_SOURCE",
+      "batchSize" : 10,
+      "timeout" : 10000,
+      "writeToDestinations" : false,
+      "executeLifecycleEvents" : false,
+      "showHeader" : false,
+      "showFieldType" : true,
+      "rememberMe" : false
+    }
+  },
+  "ValueReplacer_01" : {
+    "description" : "",
+    "label" : "Empty to NULL",
+    "xPos" : 734,
+    "yPos" : 66,
+    "stageType" : "PROCESSOR"
+  },
+  "FieldRenamer_01" : {
+    "description" : "",
+    "label" : "Field Mapping",
+    "xPos" : 464,
+    "yPos" : 113,
+    "stageType" : "PROCESSOR"
+  }
+}

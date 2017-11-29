@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "testmaprfs83596fb8-79a8-4b6c-97e1-8946c4309d13",
+  "title" : "test-maprfs",
+  "description" : "",
+  "created" : 1505880569641,
+  "lastModified" : 1509326350865,
+  "creator" : "admin",
+  "lastModifier" : "admin",
+  "lastRev" : "0",
+  "uuid" : "655d7e0f-81a7-4abe-a1a1-eca04e4e0cad",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "testmaprfs83596fb8-79a8-4b6c-97e1-8946c4309d13",
+  "sdcVersion" : "2.7.1.1",
+  "sdcId" : "737f929f-9dae-11e7-b357-f93431d532c5"
+}
